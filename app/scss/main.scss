@@ -1,0 +1,66 @@
+body {
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 20px;
+	display: flex;
+	background-color: yellow;
+}
+
+@mixin red {
+	color: red;
+}
+
+@mixin blue {
+	color: blue;
+}
+
+@mixin green {
+	color: green;
+}
+
+h1 {
+	@include red();
+}
+
+h2 {
+	@include blue();
+}
+
+h3 {
+	@include green();
+}
+
+@function h($h){ 
+	@return $h;
+}
+
+h1 { 
+	height: h(200px); 
+} 
+
+@function w($w){ 
+	@return $w;
+}
+
+h1 { 
+	width: w(200px); 
+} 
+
+@mixin placeholder {
+	::-webkit-input-placeholder {@content;}
+	:-moz-placeholder {@content;}
+	::-moz-placeholder {@content;}
+	:-ms-input-placeholder {@content;}
+}
+
+@include placeholder {
+	color: blue;
+	font-size: 14px;
+}
+
+
+input {
+	@include placeholder {
+		color: yellow;
+	}
+}

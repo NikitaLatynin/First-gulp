@@ -1,0 +1,53 @@
+body {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: yellow; }
+
+h1 {
+  color: red; }
+
+h2 {
+  color: blue; }
+
+h3 {
+  color: green; }
+
+h1 {
+  height: 200px; }
+
+h1 {
+  width: 200px; }
+
+::-webkit-input-placeholder {
+  color: blue;
+  font-size: 14px; }
+
+:-moz-placeholder {
+  color: blue;
+  font-size: 14px; }
+
+::-moz-placeholder {
+  color: blue;
+  font-size: 14px; }
+
+:-ms-input-placeholder {
+  color: blue;
+  font-size: 14px; }
+
+input ::-webkit-input-placeholder {
+  color: yellow; }
+
+input :-moz-placeholder {
+  color: yellow; }
+
+input ::-moz-placeholder {
+  color: yellow; }
+
+input :-ms-input-placeholder {
+  color: yellow; }
+
+/*# sourceMappingURL=main.css.map */
